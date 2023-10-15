@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="IstorijaKorpe" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c0694e25-c3f0-4b4d-8bd3-2d659991dced">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="korisnik.ime" class="java.lang.String"/>
+	<field name="proizvod.nazivP" class="java.lang.String"/>
+	<field name="datumKupovine" class="java.util.Date"/>
+	<field name="proizvod.cenaP" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="60" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="410" height="60" uuid="dacef8f3-be0f-4db0-95d5-e1f6f3fc5b28"/>
+				<textElement textAlignment="Left">
+					<font fontName="Bell MT" size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Izvestaj o istoriji kupovine]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="63" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="33" width="110" height="30" backcolor="#EB8E8D" uuid="f235a46a-ee8c-44e6-84a5-24e5a611682d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e15afc72-145f-4b7d-8c0f-192eefe6487e"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Bookman Old Style" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ime korisnika]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="111" y="33" width="120" height="30" backcolor="#EB8E8D" uuid="c50acc12-3f10-4277-aea9-e363ac95f1e2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b7a0bfbe-2f9d-4eb9-90ac-8d5e58373f3d"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Bookman Old Style" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Naziv proizvoda]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="231" y="33" width="129" height="30" backcolor="#EB8E8D" uuid="b00a8d9a-0335-4954-a4f1-0630fadd4d24">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0541b54e-d922-48fd-9161-1efa2fb0ec72"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Bookman Old Style" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Datum kupovine]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="360" y="33" width="121" height="30" backcolor="#EB8E8D" uuid="b411a43b-3e66-464a-8f9a-88411f312bea">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="976ad8f7-2baa-4799-8278-f7fef2a09c72"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font fontName="Bookman Old Style" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cena proizvoda]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="109" height="30" uuid="e4972718-a87b-42b6-9b37-c2843b980d85">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e15afc72-145f-4b7d-8c0f-192eefe6487e"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{korisnik.ime}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="0" width="120" height="30" uuid="a19bed78-383a-4a1a-be00-f24d8f274430">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b7a0bfbe-2f9d-4eb9-90ac-8d5e58373f3d"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{proizvod.nazivP}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="231" y="0" width="128" height="30" uuid="302cf11d-821a-49c9-a3c1-6d32e819aa7e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0541b54e-d922-48fd-9161-1efa2fb0ec72"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{datumKupovine}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="360" y="0" width="120" height="30" uuid="41a98593-e6ab-448a-828e-18c361ec8935">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="976ad8f7-2baa-4799-8278-f7fef2a09c72"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{proizvod.cenaP}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="76" splitType="Stretch">
+			<textField>
+				<reportElement x="445" y="46" width="100" height="30" uuid="2851d261-a1ed-4c61-91fb-b197d3ac49c5"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
